@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+        <title>My AngularJS App</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/underscorejs/1.5.2/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+        <script src="app/application.js"></script>
+        <script src="app/services/myService.js"></script>
+        <script src="app/controllers/mainCtrl.js"></script>
+        <script src="app/directives/myDirective.js"></script>
+    </head>
+    <body ng-controller="mainCtrl">
+        <div class="container">
+            <div class="page-header text-center">
+              <h1>My AngularJS App</h1>
+            </div>
+            <div class="text-center">
+                <my-directive my-val="Hello world!"></my-directive>
+            </div>
+        </div>
+    </body>
+</html>
